@@ -8,7 +8,7 @@ asm_func PROC
 	xor bl, bl
 	reverse_loop:
 		rcr al, 1	; после сдвига вправо, бит который сдвинули сохраняется в cf
-		rcl bl, 1	; передвигаем сохраненвй бит из cf влево
+		rcl bl, 1	; 
 		loop reverse_loop
 		mov al, bl
 
